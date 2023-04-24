@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "CCA EXT",
+  "version": "1.0.1",
+  "description": "Work ext to help add more functionality to Brightree",
+   "content_scripts": [
+   {
+    "matches": ["https://brightree.net/F1/0189/LouisClarkME/Receipts/Invoices/Invoice_Invoice.aspx?*"],
+    "js": ["ccaClaims.js"]
+  },
+  {
+    "matches": ["https://brightree.net/F1/0189/LouisClarkME/Receipts/Invoices/Invoice_CommercialERLDetail.aspx?*"],
+    "js": ["closeERL.js"]
+  },
+  {
+    "matches": ["https://brightree.net/F1/0189/LouisClarkME/Receipts/Invoices/Invoice_EOB.aspx?*"],
+    "js": ["clickERL.js"]
+  },
+  {
+    "matches": ["https://brightree.net/F1/0189/LouisClarkME/Receipts/Invoices/Invoice_CommercialERLs.aspx?*"],
+    "js": ["clickWand.js"]
+  }
+ ]
+}
